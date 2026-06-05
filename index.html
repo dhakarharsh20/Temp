@@ -27,7 +27,7 @@ body{font-family:'Barlow',sans-serif;background:var(--coal);color:var(--white);o
 .noise{position:fixed;inset:0;pointer-events:none;z-index:9990;opacity:0.03;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:200px;}
 
 /* ══ FIRE CANVAS (global immersive) ══ */
-#fire-canvas{position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:0;opacity:1;}
+#fire-canvas{position:fixed;inset:0;width:200vw;height:200;pointer-events:none;z-index:0;opacity:1;}
 
 /* ══ All section backgrounds must be semi-transparent so fire shows through ══ */
 .metrics-section{isolation:auto;}
@@ -232,10 +232,9 @@ footer{background:var(--coal);border-top:1px solid var(--border);padding:2rem 2r
 
 <!-- HEADER -->
 <header class="site-header" id="header">
-  <a href="#"><img src="logo.png" alt="Tempsens Distributor Network" width="800" height="auto"></a>
+  <a href="#"><img src="logo.png" alt="Tempsens Distributor Network" width="400" height="auto"></a>
   <nav class="nav-links">
-    <a href="#" class="nav-hide">Industries</a>
-    <a href="#" class="nav-hide">About</a>
+    <a href="#ind-section" class="nav-hide">Industries</a>
     <a href="#apply" class="nav-cta">Become a Distributor</a>
     <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
       <span></span><span></span><span></span>
